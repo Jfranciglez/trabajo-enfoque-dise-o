@@ -1,1 +1,1 @@
-# trabajo-enfoque-dise-o
+# trabajo-enfoque-diseno
