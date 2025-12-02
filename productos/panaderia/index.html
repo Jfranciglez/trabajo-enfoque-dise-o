@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+        
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>    
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+             <div id="barrabuscar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        </header>
+
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Pan Artesano</h2>
+                <p class="product-desc">800 g. Corteza crujiente y miga esponjosa.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Bollería Surtida</h2>
+                <p class="product-desc">Pack 6 unidades, fresca del día.</p>
+                <div class="product-meta">
+                    <span class="price">€3.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card" data-product-id="pan-01">
+                <img src="../../img/placeholder.png" alt="Pan Artesano 800g" class="product-img">
+                <h2 class="product-name">Pan Artesano 800g</h2>
+                <p class="product-desc">Corteza crujiente y miga esponjosa.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-02">
+                <img src="../../img/placeholder.png" alt="Bollería Surtida" class="product-img">
+                <h2 class="product-name">Bollería Surtida 6u</h2>
+                <p class="product-desc">Pack 6 unidades, fresca del día.</p>
+                <div class="product-meta">
+                    <span class="price">€3.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-03">
+                <img src="../../img/placeholder.png" alt="Baguette" class="product-img">
+                <h2 class="product-name">Baguette</h2>
+                <p class="product-desc">Pan crujiente, ideal para bocadillos.</p>
+                <div class="product-meta">
+                    <span class="price">€1.10</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-04">
+                <img src="../../img/placeholder.png" alt="Croissant" class="product-img">
+                <h2 class="product-name">Croissant</h2>
+                <p class="product-desc">Hojaldre, mantequilla auténtica.</p>
+                <div class="product-meta">
+                    <span class="price">€0.95</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-05">
+                <img src="../../img/placeholder.png" alt="Pan Integral" class="product-img">
+                <h2 class="product-name">Pan Integral 500g</h2>
+                <p class="product-desc">Hecho con harina integral.</p>
+                <div class="product-meta">
+                    <span class="price">€1.89</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-06">
+                <img src="../../img/placeholder.png" alt="Muffins 4u" class="product-img">
+                <h2 class="product-name">Muffins 4u</h2>
+                <p class="product-desc">Variedad de sabores, pack 4.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-07">
+                <img src="../../img/placeholder.png" alt="Pan de Ajo" class="product-img">
+                <h2 class="product-name">Pan de Ajo</h2>
+                <p class="product-desc">Listo para hornear, sabor intenso.</p>
+                <div class="product-meta">
+                    <span class="price">€1.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-08">
+                <img src="../../img/placeholder.png" alt="Rosquillas" class="product-img">
+                <h2 class="product-name">Rosquillas 6u</h2>
+                <p class="product-desc">Dulces tradicionales.</p>
+                <div class="product-meta">
+                    <span class="price">€2.20</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-09">
+                <img src="../../img/placeholder.png" alt="Bollo de Leche" class="product-img">
+                <h2 class="product-name">Bollo de Leche</h2>
+                <p class="product-desc">Bollo esponjoso con toque de leche.</p>
+                <div class="product-meta">
+                    <span class="price">€0.85</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="pan-10">
+                <img src="../../img/placeholder.png" alt="Panecillos 4u" class="product-img">
+                <h2 class="product-name">Panecillos 4u</h2>
+                <p class="product-desc">Perfectos para bocadillos pequeños.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+</html>

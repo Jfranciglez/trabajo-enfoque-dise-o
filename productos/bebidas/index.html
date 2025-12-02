@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+        
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>    
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+             <div id="barrabuscar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        </header>
+
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card" data-product-id="beb-01">
+                <img src="../../img/placeholder.png" alt="Refresco Cola 500ml" class="product-img">
+                <h2 class="product-name">Refresco Cola 500ml</h2>
+                <p class="product-desc">Sabor clásico, botella individual.</p>
+                <div class="product-meta">
+                    <span class="price">€1.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-02">
+                <img src="../../img/placeholder.png" alt="Agua Mineral 1L" class="product-img">
+                <h2 class="product-name">Agua Mineral 1L</h2>
+                <p class="product-desc">Botella 1 litro, sin gas.</p>
+                <div class="product-meta">
+                    <span class="price">€0.79</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-03">
+                <img src="../../img/placeholder.png" alt="Zumo Naranja 1L" class="product-img">
+                <h2 class="product-name">Zumo Naranja 1L</h2>
+                <p class="product-desc">Zumo exprimido, sin azúcares añadidos.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-04">
+                <img src="../../img/placeholder.png" alt="Té Helado 330ml" class="product-img">
+                <h2 class="product-name">Té Helado 330ml</h2>
+                <p class="product-desc">Sabor limón, lata individual.</p>
+                <div class="product-meta">
+                    <span class="price">€0.95</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-05">
+                <img src="../../img/placeholder.png" alt="Cerveza 33cl" class="product-img">
+                <h2 class="product-name">Cerveza 33cl</h2>
+                <p class="product-desc">Cerveza rubia, refrescante.</p>
+                <div class="product-meta">
+                    <span class="price">€1.10</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-06">
+                <img src="../../img/placeholder.png" alt="Leche Entera 1L" class="product-img">
+                <h2 class="product-name">Leche Entera 1L</h2>
+                <p class="product-desc">Leche fresca entera.</p>
+                <div class="product-meta">
+                    <span class="price">€0.95</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-07">
+                <img src="../../img/placeholder.png" alt="Café Molido 250g" class="product-img">
+                <h2 class="product-name">Café Molido 250g</h2>
+                <p class="product-desc">Café arábica molido, aroma intenso.</p>
+                <div class="product-meta">
+                    <span class="price">€3.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-08">
+                <img src="../../img/placeholder.png" alt="Bebida Energética 250ml" class="product-img">
+                <h2 class="product-name">Bebida Energética 250ml</h2>
+                <p class="product-desc">Energía instantánea, lata pequeña.</p>
+                <div class="product-meta">
+                    <span class="price">€1.59</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-09">
+                <img src="../../img/placeholder.png" alt="Leche Vegetal 1L" class="product-img">
+                <h2 class="product-name">Leche de Almendra 1L</h2>
+                <p class="product-desc">Opción vegetal, sin lactosa.</p>
+                <div class="product-meta">
+                    <span class="price">€2.19</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-10">
+                <img src="../../img/placeholder.png" alt="Smoothie 300ml" class="product-img">
+                <h2 class="product-name">Smoothie Frutos Rojos 300ml</h2>
+                <p class="product-desc">Batido natural, sin azúcares añadidos.</p>
+                <div class="product-meta">
+                    <span class="price">€2.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="beb-11">
+                <img src="../../img/placeholder.png" alt="Sidra 500ml" class="product-img">
+                <h2 class="product-name">Sidra 500ml</h2>
+                <p class="product-desc">Bebida fermentada, sabor afrutado.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+        
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>    
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+             <div id="barrabuscar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        </header>
+
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Manzanas</h2>
+                <p class="product-desc">Bolsa 1 kg. Manzanas frescas de temporada.</p>
+                <div class="product-meta">
+                    <span class="price">€2.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Lechuga</h2>
+                <p class="product-desc">Unidad. Fresca para ensaladas.</p>
+                <div class="product-meta">
+                    <span class="price">€0.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card" data-product-id="fru-01">
+                <img src="../../img/placeholder.png" alt="Manzanas 1kg" class="product-img">
+                <h2 class="product-name">Manzanas 1kg</h2>
+                <p class="product-desc">Manzanas rojas, frescas de temporada.</p>
+                <div class="product-meta">
+                    <span class="price">€2.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-02">
+                <img src="../../img/placeholder.png" alt="Lechuga" class="product-img">
+                <h2 class="product-name">Lechuga</h2>
+                <p class="product-desc">Unidad fresca para ensaladas.</p>
+                <div class="product-meta">
+                    <span class="price">€0.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-03">
+                <img src="../../img/placeholder.png" alt="Plátanos 1kg" class="product-img">
+                <h2 class="product-name">Plátanos 1kg</h2>
+                <p class="product-desc">Dulces y maduros, perfectos para snacks.</p>
+                <div class="product-meta">
+                    <span class="price">€1.39</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-04">
+                <img src="../../img/placeholder.png" alt="Naranjas 1kg" class="product-img">
+                <h2 class="product-name">Naranjas 1kg</h2>
+                <p class="product-desc">Naranjas jugosas para zumo.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-05">
+                <img src="../../img/placeholder.png" alt="Tomates 1kg" class="product-img">
+                <h2 class="product-name">Tomates 1kg</h2>
+                <p class="product-desc">Para ensaladas y cocinar.</p>
+                <div class="product-meta">
+                    <span class="price">€1.79</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-06">
+                <img src="../../img/placeholder.png" alt="Uvas 500g" class="product-img">
+                <h2 class="product-name">Uvas 500g</h2>
+                <p class="product-desc">Dulces, ideales para postres.</p>
+                <div class="product-meta">
+                    <span class="price">€2.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-07">
+                <img src="../../img/placeholder.png" alt="Fresas 250g" class="product-img">
+                <h2 class="product-name">Fresas 250g</h2>
+                <p class="product-desc">Frescas y jugosas.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-08">
+                <img src="../../img/placeholder.png" alt="Aguacate" class="product-img">
+                <h2 class="product-name">Aguacate</h2>
+                <p class="product-desc">Unidad madura para tostadas y ensaladas.</p>
+                <div class="product-meta">
+                    <span class="price">€1.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-09">
+                <img src="../../img/placeholder.png" alt="Peras 1kg" class="product-img">
+                <h2 class="product-name">Peras 1kg</h2>
+                <p class="product-desc">Dulces y jugosas.</p>
+                <div class="product-meta">
+                    <span class="price">€2.19</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-10">
+                <img src="../../img/placeholder.png" alt="Kiwis 4u" class="product-img">
+                <h2 class="product-name">Kiwis 4 unidades</h2>
+                <p class="product-desc">Ricos en vitamina C.</p>
+                <div class="product-meta">
+                    <span class="price">€1.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="fru-11">
+                <img src="../../img/placeholder.png" alt="Limones 500g" class="product-img">
+                <h2 class="product-name">Limones 500g</h2>
+                <p class="product-desc">Perfectos para aliños y bebidas.</p>
+                <div class="product-meta">
+                    <span class="price">€0.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+</html>

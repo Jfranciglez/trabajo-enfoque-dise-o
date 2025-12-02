@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+        
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>    
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+             <div id="barrabuscar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        </header>
+
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Detergente Líquido</h2>
+                <p class="product-desc">1.5 L. Fórmula concentrada para prendas limpias.</p>
+                <div class="product-meta">
+                    <span class="price">€4.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Paños Multiusos</h2>
+                <p class="product-desc">Pack 3 unidades, ideal para limpieza diaria.</p>
+                <div class="product-meta">
+                    <span class="price">€2.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card" data-product-id="hog-01">
+                <img src="../../img/placeholder.png" alt="Detergente Líquido 1.5L" class="product-img">
+                <h2 class="product-name">Detergente Líquido 1.5L</h2>
+                <p class="product-desc">Fórmula concentrada para prendas limpias.</p>
+                <div class="product-meta">
+                    <span class="price">€4.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-02">
+                <img src="../../img/placeholder.png" alt="Paños Multiusos 3u" class="product-img">
+                <h2 class="product-name">Paños Multiusos 3u</h2>
+                <p class="product-desc">Pack 3 unidades, ideal para limpieza diaria.</p>
+                <div class="product-meta">
+                    <span class="price">€2.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-03">
+                <img src="../../img/placeholder.png" alt="Limpiador Baños 750ml" class="product-img">
+                <h2 class="product-name">Limpiador Baños 750ml</h2>
+                <p class="product-desc">Fórmula anti-cal y anti-grasa.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-04">
+                <img src="../../img/placeholder.png" alt="Esponjas 5u" class="product-img">
+                <h2 class="product-name">Esponjas 5u</h2>
+                <p class="product-desc">Para limpieza de cocina y baños.</p>
+                <div class="product-meta">
+                    <span class="price">€1.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-05">
+                <img src="../../img/placeholder.png" alt="Guantes de Limpieza" class="product-img">
+                <h2 class="product-name">Guantes de Limpieza</h2>
+                <p class="product-desc">Pack 2 pares, resistentes.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-06">
+                <img src="../../img/placeholder.png" alt="Ambientador 300ml" class="product-img">
+                <h2 class="product-name">Ambientador 300ml</h2>
+                <p class="product-desc">Fragancia duradera para el hogar.</p>
+                <div class="product-meta">
+                    <span class="price">€2.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-07">
+                <img src="../../img/placeholder.png" alt="Bolsa Basura 50L" class="product-img">
+                <h2 class="product-name">Bolsas de Basura 50L</h2>
+                <p class="product-desc">Pack 20 unidades, resistentes.</p>
+                <div class="product-meta">
+                    <span class="price">€3.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-08">
+                <img src="../../img/placeholder.png" alt="Limpiacristales 500ml" class="product-img">
+                <h2 class="product-name">Limpiacristales 500ml</h2>
+                <p class="product-desc">Acabado brillante sin residuos.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-09">
+                <img src="../../img/placeholder.png" alt="Suavizante 1L" class="product-img">
+                <h2 class="product-name">Suavizante 1L</h2>
+                <p class="product-desc">Ropa suave y fragante.</p>
+                <div class="product-meta">
+                    <span class="price">€2.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="hog-10">
+                <img src="../../img/placeholder.png" alt="Limpiador Multiusos" class="product-img">
+                <h2 class="product-name">Limpiador Multiusos 750ml</h2>
+                <p class="product-desc">Uso general para toda la casa.</p>
+                <div class="product-meta">
+                    <span class="price">€2.79</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+</html>

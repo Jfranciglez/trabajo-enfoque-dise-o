@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+        
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>    
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+             <div id="barrabuscar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        </header>
+
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Champú Suave</h2>
+                <p class="product-desc">250 ml, fórmula suave para el cabello diario.</p>
+                <div class="product-meta">
+                    <span class="price">€3.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                <h2 class="product-name">Crema Hidratante</h2>
+                <p class="product-desc">50 ml, piel seca. Hidratación intensiva.</p>
+                <div class="product-meta">
+                    <span class="price">€6.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        <section class="product-list" aria-label="Lista de productos">
+            <article class="product-card" data-product-id="bel-01">
+                <img src="../../img/placeholder.png" alt="Champú Suave" class="product-img">
+                <h2 class="product-name">Champú Suave</h2>
+                <p class="product-desc">250 ml, fórmula suave para el cabello diario.</p>
+                <div class="product-meta">
+                    <span class="price">€3.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-02">
+                <img src="../../img/placeholder.png" alt="Crema Hidratante" class="product-img">
+                <h2 class="product-name">Crema Hidratante 50ml</h2>
+                <p class="product-desc">Piel seca. Hidratación intensiva.</p>
+                <div class="product-meta">
+                    <span class="price">€6.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-03">
+                <img src="../../img/placeholder.png" alt="Mascarilla Facial" class="product-img">
+                <h2 class="product-name">Mascarilla Facial</h2>
+                <p class="product-desc">Tratamiento nutritivo semanal.</p>
+                <div class="product-meta">
+                    <span class="price">€4.25</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-04">
+                <img src="../../img/placeholder.png" alt="Desodorante 150ml" class="product-img">
+                <h2 class="product-name">Desodorante 150ml</h2>
+                <p class="product-desc">Protección 48h, sin alcohol.</p>
+                <div class="product-meta">
+                    <span class="price">€2.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-05">
+                <img src="../../img/placeholder.png" alt="Asíntoma Loción" class="product-img">
+                <h2 class="product-name">Aceite Corporal 200ml</h2>
+                <p class="product-desc">Hidratación y brillo para la piel.</p>
+                <div class="product-meta">
+                    <span class="price">€7.50</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-06">
+                <img src="../../img/placeholder.png" alt="Esmalte Uñas" class="product-img">
+                <h2 class="product-name">Esmalte de Uñas</h2>
+                <p class="product-desc">Color duradero, secado rápido.</p>
+                <div class="product-meta">
+                    <span class="price">€2.49</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-07">
+                <img src="../../img/placeholder.png" alt="Cepillo Facial" class="product-img">
+                <h2 class="product-name">Cepillo Facial</h2>
+                <p class="product-desc">Limpieza profunda e hidratación.</p>
+                <div class="product-meta">
+                    <span class="price">€9.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-08">
+                <img src="../../img/placeholder.png" alt="Protector Solar" class="product-img">
+                <h2 class="product-name">Protector Solar SPF50</h2>
+                <p class="product-desc">Alta protección, resistente al agua.</p>
+                <div class="product-meta">
+                    <span class="price">€11.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-09">
+                <img src="../../img/placeholder.png" alt="Serum Antiedad" class="product-img">
+                <h2 class="product-name">Serum Antiedad 30ml</h2>
+                <p class="product-desc">Reduce líneas de expresión.</p>
+                <div class="product-meta">
+                    <span class="price">€14.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-10">
+                <img src="../../img/placeholder.png" alt="Crema Manos" class="product-img">
+                <h2 class="product-name">Crema de Manos 75ml</h2>
+                <p class="product-desc">Nutrición rápida y no grasa.</p>
+                <div class="product-meta">
+                    <span class="price">€1.99</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bel-11">
+                <img src="../../img/placeholder.png" alt="Toallitas Desmaquillantes" class="product-img">
+                <h2 class="product-name">Toallitas Desmaquillantes 25u</h2>
+                <p class="product-desc">Suaves y eficaces para todo tipo de piel.</p>
+                <div class="product-meta">
+                    <span class="price">€2.29</span>
+                    <button class="add-to-cart" type="button">Añadir al carrito</button>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+</html>

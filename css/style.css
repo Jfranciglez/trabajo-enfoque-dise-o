@@ -1,0 +1,108 @@
+/* Estilos básicos para las páginas de productos */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	padding: 20px;
+}
+
+.product-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.product-card {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 12px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+}
+
+.product-img {
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.product-name {
+	font-size: 1.05rem;
+	margin: 6px 0 4px;
+	text-align: center;
+}
+
+.product-desc {
+	font-size: 0.9rem;
+	color: #555;
+	text-align: center;
+	margin: 0 0 8px;
+}
+
+.product-meta {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.price {
+	font-weight: 700;
+	color: #111;
+}
+
+.add-to-cart {
+	background: #2d89ef;
+	color: #fff;
+	border: none;
+	padding: 8px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.add-to-cart:hover {
+	background: #1b64c7;
+}
+
+/* pequeño ajuste para el contenedor de búsqueda */
+#barrabuscar {
+	margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.product-meta { flex-direction: column; align-items: stretch; }
+	.add-to-cart { width: 100%; }
+}
+
+/* Estilos para menú hamburguesa */
+.navprod { position: relative; }
+.menuhamb {
+	display: none;
+	background: transparent;
+	border: none;
+	font-size: 1.25rem;
+	cursor: pointer;
+}
+
+#menu { list-style: none; margin: 0; padding: 0; }
+
+@media (max-width: 768px) {
+	.menuhamb { display: inline-block; }
+	/* ocultar el menú por defecto en móvil */
+	#menu { display: none; position: absolute; top: 48px; left: 8px; right: 8px; background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); z-index: 40; }
+	#menu.open { display: block; }
+	#menu li { padding: 6px 8px; }
+	#menu li a { color: #111; text-decoration: none; display: block; }
+}
