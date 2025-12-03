@@ -5,9 +5,6 @@ body {
 	padding: 0;
 }
 
-#content {
-	padding: 20px;
-}
 
 .product-list {
 	display: grid;
@@ -80,29 +77,83 @@ body {
 	margin-top: 10px;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-	.product-meta { flex-direction: column; align-items: stretch; }
-	.add-to-cart { width: 100%; }
+#content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+header{
+	display: grid;
+	grid-template: (8, 1fr);
+}
+.navbar{
+	display: grid;
+	grid-column: span 4/8;
+	
+	
+}
+h1{
+	display: grid;
+	grid-column: 2/3;
+}
+.navprod {
+    display: grid;
+	grid-column: 1;
 }
 
-/* Estilos para menú hamburguesa */
-.navprod { position: relative; }
+/* Botón hamburguesa */
 .menuhamb {
-	display: none;
-	background: transparent;
-	border: none;
-	font-size: 1.25rem;
-	cursor: pointer;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
-#menu { list-style: none; margin: 0; padding: 0; }
+/* Texto Productos visible siempre */
+#textProd {
+  font-weight: bold;
+  margin: 10px 0;
+}
 
-@media (max-width: 768px) {
-	.menuhamb { display: inline-block; }
-	/* ocultar el menú por defecto en móvil */
-	#menu { display: none; position: absolute; top: 48px; left: 8px; right: 8px; background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); z-index: 40; }
-	#menu.open { display: block; }
-	#menu li { padding: 6px 8px; }
-	#menu li a { color: #111; text-decoration: none; display: block; }
+/* Lista de productos oculta por defecto */
+#menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada item */
+#menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar{
+
+}
+
+	
+#productosfav{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+}
+#ofertas{
+
+}
+
+#clubfresh{
+
 }

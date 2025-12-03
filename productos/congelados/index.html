@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
+
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Página Principal</a></li>
+                    <li><a href="../../iniciosesion/index.html">Inicia Sesión</a></li>
+                    <li><a href="../../favoritos/index.html">Favoritos</a></li>
+                    <li><a href="../../carrito/index.html">Carrito</a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>
+
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../congelados/index.html">Congelados</a></li>
+                    <li><a href="../bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../panaderia/index.html">Panadería</a></li>
+                    <li><a href="../belleza/index.html">Belleza</a></li>
+
+                </ul>
+            </nav>
+            <div id="barrabuscar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="banner-homecarniceria">
+                <h2>Carnicería</h2>
+                <img src="../../css/img/congeladoshome.jpg" alt="Productos frescos de carnicería">
+            </section>
+
+            <section class="product-list" aria-label="Lista de productos">
+                <article class="product-card">
+                    <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                    <h2 class="product-name">Filete de Ternera</h2>
+                    <p class="product-desc">500 g. Cortes seleccionados para asar o freír.</p>
+                    <div class="product-meta">
+                        <span class="price">€7.99</span>
+                        <button class="add-to-cart" type="button">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+                    <h2 class="product-name">Pechuga de Pollo</h2>
+                    <p class="product-desc">1 kg, sin hueso. Ideal para recetas saludables.</p>
+                    <div class="product-meta">
+                        <span class="price">€5.49</span>
+                        <button class="add-to-cart" type="button">Añadir al carrito</button>
+                    </div>
+                </article>
+                <section class="product-list" aria-label="Lista de productos">
+                    <article class="product-card" data-product-id="car-01">
+                        <img src="../../img/placeholder.png" alt="Filete de Ternera" class="product-img">
+                        <h2 class="product-name">Filete de Ternera 500g</h2>
+                        <p class="product-desc">Corte seleccionado para asar.</p>
+                        <div class="product-meta">
+                            <span class="price">€7.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-02">
+                        <img src="../../img/placeholder.png" alt="Pechuga de Pollo 1kg" class="product-img">
+                        <h2 class="product-name">Pechuga de Pollo 1kg</h2>
+                        <p class="product-desc">Sin hueso, ideal para recetas saludables.</p>
+                        <div class="product-meta">
+                            <span class="price">€5.49</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-03">
+                        <img src="../../img/placeholder.png" alt="Costillas de Cerdo" class="product-img">
+                        <h2 class="product-name">Costillas de Cerdo 1kg</h2>
+                        <p class="product-desc">Sabrosas y jugosas para barbacoa.</p>
+                        <div class="product-meta">
+                            <span class="price">€6.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-04">
+                        <img src="../../img/placeholder.png" alt="Hamburguesa 200g" class="product-img">
+                        <h2 class="product-name">Hamburguesa 200g</h2>
+                        <p class="product-desc">Preparadas con carne 100% vacuno.</p>
+                        <div class="product-meta">
+                            <span class="price">€2.50</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-05">
+                        <img src="../../img/placeholder.png" alt="Carne Picada 500g" class="product-img">
+                        <h2 class="product-name">Carne Picada 500g</h2>
+                        <p class="product-desc">Ideal para albóndigas y salsas.</p>
+                        <div class="product-meta">
+                            <span class="price">€3.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-06">
+                        <img src="../../img/placeholder.png" alt="Salchichas 6u" class="product-img">
+                        <h2 class="product-name">Salchichas 6 unidades</h2>
+                        <p class="product-desc">Para parrilla o sartén.</p>
+                        <div class="product-meta">
+                            <span class="price">€2.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-07">
+                        <img src="../../img/placeholder.png" alt="Jamón Cocido" class="product-img">
+                        <h2 class="product-name">Jamón Cocido 200g</h2>
+                        <p class="product-desc">Loncheado, sabor delicado.</p>
+                        <div class="product-meta">
+                            <span class="price">€2.79</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-08">
+                        <img src="../../img/placeholder.png" alt="Chuleta de Cerdo" class="product-img">
+                        <h2 class="product-name">Chuleta de Cerdo 2u</h2>
+                        <p class="product-desc">Frescas, para freír o asar.</p>
+                        <div class="product-meta">
+                            <span class="price">€4.49</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-09">
+                        <img src="../../img/placeholder.png" alt="Pata de Cordero" class="product-img">
+                        <h2 class="product-name">Pata de Cordero 1kg</h2>
+                        <p class="product-desc">Corte para asar al horno.</p>
+                        <div class="product-meta">
+                            <span class="price">€9.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product-id="car-10">
+                        <img src="../../img/placeholder.png" alt="Tocino 300g" class="product-img">
+                        <h2 class="product-name">Tocino 300g</h2>
+                        <p class="product-desc">Ahumado, para cocinar y dar sabor.</p>
+                        <div class="product-meta">
+                            <span class="price">€2.99</span>
+                            <button class="add-to-cart" type="button">Añadir al carrito</button>
+                        </div>
+                    </article>
+                </section>
+        </main>
+    </div>
+        
+
+    <script src="../../js/cart.js"></script>
+
+</body>
+
+</html>
