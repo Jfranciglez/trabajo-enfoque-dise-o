@@ -1,4 +1,4 @@
-// Script simple de carrito usando localStorage
+// Script de carrito usando localStorage
 function getCart(){
     try{ return JSON.parse(localStorage.getItem('cart')||'[]'); }catch(e){ return []; }
 }
@@ -77,24 +77,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     updateCartCount();
     renderCartPage();
-    // hamburger menu toggle (muestra/oculta la lista de productos en pantallas pequeñas)
-    const menuBtn = document.getElementById('menuhamb');
-    const menu = document.getElementById('menu');
-    if(menuBtn && menu){
-        menuBtn.setAttribute('aria-expanded','false');
-        menuBtn.addEventListener('click', (e)=>{
-            e.stopPropagation();
-            const opened = menu.classList.toggle('open');
-            menuBtn.setAttribute('aria-expanded', opened ? 'true' : 'false');
-        });
-        // cerrar al clicar fuera
-        document.addEventListener('click', (e)=>{
-            if(menu.classList.contains('open') && !menu.contains(e.target) && e.target !== menuBtn){
-                menu.classList.remove('open');
-                menuBtn.setAttribute('aria-expanded','false');
-            }
-        });
-        // cerrar con Escape
-        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && menu.classList.contains('open')){ menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); } });
-    }
+   
 });
