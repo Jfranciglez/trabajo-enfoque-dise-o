@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshSuperMarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
     <div id="content">
         <header>
             <h1>FreshSuperMarket</h1> <!--le hare un logo despues-->
-        
 
-            <nav class="navbar">
+
+             <nav class="navbar">
                 <ul>
-                    <li><a href="../index.html">Página Principal</a></li>
-                    <li><a href="../iniciosesion/index.html">Inicia Sesión</a></li>
-                    <li><a href="../favoritos/index.html">Favoritos</a></li>
-                    <li><a href="carrito.html">Carrito</a></li>
+
+                    <li><a href="../../index.html" title="Página Principal"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../../iniciosesion/index.html" title="Inicia Sesión"><i class="fas fa-user"></i></a></li>
+                    <li><a href="../../favoritos/index.html" title="Favoritos"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="../../carrito/index.html" title="Carrito"><i class="fas fa-shopping-cart"></i></a> <span id="cart-count">0</span></li>
                 </ul>
             </nav>    
 
@@ -40,8 +43,27 @@
 
                 </ul>
             </nav>
-             <div id="barrabuscar">
-            <input type="text" placeholder="Buscar productos...">
-            <button>Buscar</button>
-        </div>
+            <div id="barrabuscar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
         </header>
+        <main>
+            <section class="log-container">
+                <article class="login-form">
+                    <h2>Inicia Sesión</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="Usuario" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Contraseña" />
+                    </div>
+                    <button class="btn">Regístrate</button>
+                    <p>¿No te has registrado aún?</p>
+
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
