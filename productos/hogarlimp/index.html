@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshSuperMarket</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -51,30 +50,13 @@
 
         <main>
             <section id="banner-homehogarlimp">
-            <h2>Hogar y Limpieza</h2>
+                <div class="banner-content">
+                <h2>Hogar y Limpieza</h2>
+                </div>
             <img src="../../css/img/hogarylimp.jpg" alt="Productos de hogar y limpieza">
             </section>
 
-        <section class="product-list" aria-label="Lista de productos">
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
-                <h2 class="product-name">Detergente Líquido</h2>
-                <p class="product-desc">1.5 L. Fórmula concentrada para prendas limpias.</p>
-                <div class="product-meta">
-                    <span class="price">€4.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
-                <h2 class="product-name">Paños Multiusos</h2>
-                <p class="product-desc">Pack 3 unidades, ideal para limpieza diaria.</p>
-                <div class="product-meta">
-                    <span class="price">€2.29</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
+        
         <section class="product-list" aria-label="Lista de productos">
             <article class="product-card" data-product-id="hog-01">
                 <img src="../../img/placeholder.png" alt="Detergente Líquido 1.5L" class="product-img">
@@ -135,83 +117,31 @@
                     <button class="add-to-cart" type="button">Añadir al carrito</button>
                 </div>
             </article>
-
-            <article class="product-card" data-product-id="hog-07">
-                <img src="../../img/placeholder.png" alt="Bolsa Basura 50L" class="product-img">
-                <h2 class="product-name">Bolsas de Basura 50L</h2>
-                <p class="product-desc">Pack 20 unidades, resistentes.</p>
-                <div class="product-meta">
-                    <span class="price">€3.49</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="hog-08">
-                <img src="../../img/placeholder.png" alt="Limpiacristales 500ml" class="product-img">
-                <h2 class="product-name">Limpiacristales 500ml</h2>
-                <p class="product-desc">Acabado brillante sin residuos.</p>
-                <div class="product-meta">
-                    <span class="price">€1.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="hog-09">
-                <img src="../../img/placeholder.png" alt="Suavizante 1L" class="product-img">
-                <h2 class="product-name">Suavizante 1L</h2>
-                <p class="product-desc">Ropa suave y fragante.</p>
-                <div class="product-meta">
-                    <span class="price">€2.49</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="hog-10">
-                <img src="../../img/placeholder.png" alt="Limpiador Multiusos" class="product-img">
-                <h2 class="product-name">Limpiador Multiusos 750ml</h2>
-                <p class="product-desc">Uso general para toda la casa.</p>
-                <div class="product-meta">
-                    <span class="price">€2.79</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
         </section>
         </main>
     </div>
 
-    <footer class="bg-light py-4 border-top">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-12">
-                    <div class="d-flex gap-3 align-items-center flex-wrap">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-x-twitter fa-2x"></i>
-                        </a>
-                        <div style="margin-left: 30px;">
-                            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start">
-                        <a href="#" class="text-decoration-none text-dark small">Política de privacidad</a>
-                        <a href="#" class="text-decoration-none text-dark small">Política de cookies</a>
-                        <a href="#" class="text-decoration-none text-dark small">Aviso legal</a>
-                        <a href="#" class="text-decoration-none text-dark small">Condiciones de compra</a>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Aviso legal</a>
+            <a href="#">Condiciones de compra</a>
         </div>
     </footer>
 

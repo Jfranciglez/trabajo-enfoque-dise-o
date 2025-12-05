@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshSuperMarket</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -51,30 +50,13 @@
 
         <main>
             <section id="banner-homebelleza">
-            <h2>Belleza</h2>
+                <div class="banner-contentbell">
+                    <h2>Belleza</h2>
+                </div>
             <img src="../../css/img/belleza.jpg" alt="Productos de belleza y cuidado personal">
             </section>
 
-        <section class="product-list" aria-label="Lista de productos">
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
-                <h2 class="product-name">Champú Suave</h2>
-                <p class="product-desc">250 ml, fórmula suave para el cabello diario.</p>
-                <div class="product-meta">
-                    <span class="price">€3.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
-                <h2 class="product-name">Crema Hidratante</h2>
-                <p class="product-desc">50 ml, piel seca. Hidratación intensiva.</p>
-                <div class="product-meta">
-                    <span class="price">€6.49</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
+        
         <section class="product-list" aria-label="Lista de productos">
             <article class="product-card" data-product-id="bel-01">
                 <img src="../../img/placeholder.png" alt="Champú Suave" class="product-img">
@@ -136,93 +118,33 @@
                 </div>
             </article>
 
-            <article class="product-card" data-product-id="bel-07">
-                <img src="../../img/placeholder.png" alt="Cepillo Facial" class="product-img">
-                <h2 class="product-name">Cepillo Facial</h2>
-                <p class="product-desc">Limpieza profunda e hidratación.</p>
-                <div class="product-meta">
-                    <span class="price">€9.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="bel-08">
-                <img src="../../img/placeholder.png" alt="Protector Solar" class="product-img">
-                <h2 class="product-name">Protector Solar SPF50</h2>
-                <p class="product-desc">Alta protección, resistente al agua.</p>
-                <div class="product-meta">
-                    <span class="price">€11.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="bel-09">
-                <img src="../../img/placeholder.png" alt="Serum Antiedad" class="product-img">
-                <h2 class="product-name">Serum Antiedad 30ml</h2>
-                <p class="product-desc">Reduce líneas de expresión.</p>
-                <div class="product-meta">
-                    <span class="price">€14.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="bel-10">
-                <img src="../../img/placeholder.png" alt="Crema Manos" class="product-img">
-                <h2 class="product-name">Crema de Manos 75ml</h2>
-                <p class="product-desc">Nutrición rápida y no grasa.</p>
-                <div class="product-meta">
-                    <span class="price">€1.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="bel-11">
-                <img src="../../img/placeholder.png" alt="Toallitas Desmaquillantes" class="product-img">
-                <h2 class="product-name">Toallitas Desmaquillantes 25u</h2>
-                <p class="product-desc">Suaves y eficaces para todo tipo de piel.</p>
-                <div class="product-meta">
-                    <span class="price">€2.29</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
+           
         </section>
         </main>
     </div>
     
 
-    <footer class="bg-light py-4 border-top">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-12">
-                    <div class="d-flex gap-3 align-items-center flex-wrap">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-x-twitter fa-2x"></i>
-                        </a>
-                        <div style="margin-left: 30px;">
-                            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start">
-                        <a href="#" class="text-decoration-none text-dark small">Política de privacidad</a>
-                        <a href="#" class="text-decoration-none text-dark small">Política de cookies</a>
-                        <a href="#" class="text-decoration-none text-dark small">Aviso legal</a>
-                        <a href="#" class="text-decoration-none text-dark small">Condiciones de compra</a>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Aviso legal</a>
+            <a href="#">Condiciones de compra</a>
         </div>
     </footer>
     <script src="../../js/menuhamb.js"></script>

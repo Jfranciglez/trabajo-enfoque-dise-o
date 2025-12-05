@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshSuperMarket</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -52,13 +51,15 @@
 
         <main>
             <section id="banner-homepanaderia">
-            <h2>Panadería</h2>
+                <div class="banner-contentpanaderia">
+                    <h2>Panadería</h2>
+                </div>
             <img src="../../css/img/panaderia.jpg" alt="Productos frescos de panadería">
             </section>
 
         <section class="product-list" aria-label="Lista de productos">
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+            <article class="product-card" data-product-id="pan-01">
+                <img src="../../css/img/corteza.jpg" alt="Pan Artesano" class="product-img">
                 <h2 class="product-name">Pan Artesano</h2>
                 <p class="product-desc">800 g. Corteza crujiente y miga esponjosa.</p>
                 <div class="product-meta">
@@ -67,8 +68,8 @@
                 </div>
             </article>
 
-            <article class="product-card">
-                <img src="../../img/placeholder.png" alt="Producto ejemplo" class="product-img">
+            <article class="product-card" data-product-id="pan-02">
+                <img src="../../css/img/bolleria.jpg" alt="Bollería Surtida" class="product-img">
                 <h2 class="product-name">Bollería Surtida</h2>
                 <p class="product-desc">Pack 6 unidades, fresca del día.</p>
                 <div class="product-meta">
@@ -76,29 +77,10 @@
                     <button class="add-to-cart" type="button">Añadir al carrito</button>
                 </div>
             </article>
-        <section class="product-list" aria-label="Lista de productos">
-            <article class="product-card" data-product-id="pan-01">
-                <img src="../../img/placeholder.png" alt="Pan Artesano 800g" class="product-img">
-                <h2 class="product-name">Pan Artesano 800g</h2>
-                <p class="product-desc">Corteza crujiente y miga esponjosa.</p>
-                <div class="product-meta">
-                    <span class="price">€2.99</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
-
-            <article class="product-card" data-product-id="pan-02">
-                <img src="../../img/placeholder.png" alt="Bollería Surtida" class="product-img">
-                <h2 class="product-name">Bollería Surtida 6u</h2>
-                <p class="product-desc">Pack 6 unidades, fresca del día.</p>
-                <div class="product-meta">
-                    <span class="price">€3.49</span>
-                    <button class="add-to-cart" type="button">Añadir al carrito</button>
-                </div>
-            </article>
+       
 
             <article class="product-card" data-product-id="pan-03">
-                <img src="../../img/placeholder.png" alt="Baguette" class="product-img">
+                <img src="../../css/img/conjunto-de-panes-almacenados-para-la-venta-y-el-consumo-en-el-supermercado.jpg" alt="Baguette" class="product-img">
                 <h2 class="product-name">Baguette</h2>
                 <p class="product-desc">Pan crujiente, ideal para bocadillos.</p>
                 <div class="product-meta">
@@ -108,7 +90,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-04">
-                <img src="../../img/placeholder.png" alt="Croissant" class="product-img">
+                <img src="../../css/img/croissants-en-una-tabla-para-cortar-madera.jpg" alt="Croissant" class="product-img">
                 <h2 class="product-name">Croissant</h2>
                 <p class="product-desc">Hojaldre, mantequilla auténtica.</p>
                 <div class="product-meta">
@@ -118,7 +100,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-05">
-                <img src="../../img/placeholder.png" alt="Pan Integral" class="product-img">
+                <img src="../../css/img/paninteg.jpg" alt="Pan Integral" class="product-img">
                 <h2 class="product-name">Pan Integral 500g</h2>
                 <p class="product-desc">Hecho con harina integral.</p>
                 <div class="product-meta">
@@ -128,7 +110,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-06">
-                <img src="../../img/placeholder.png" alt="Muffins 4u" class="product-img">
+                <img src="../../css/img/muff.jpg" alt="Muffins 4u" class="product-img">
                 <h2 class="product-name">Muffins 4u</h2>
                 <p class="product-desc">Variedad de sabores, pack 4.</p>
                 <div class="product-meta">
@@ -138,7 +120,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-07">
-                <img src="../../img/placeholder.png" alt="Pan de Ajo" class="product-img">
+                <img src="../../css/img/panajo.jpg" alt="Pan de Ajo" class="product-img">
                 <h2 class="product-name">Pan de Ajo</h2>
                 <p class="product-desc">Listo para hornear, sabor intenso.</p>
                 <div class="product-meta">
@@ -148,7 +130,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-08">
-                <img src="../../img/placeholder.png" alt="Rosquillas" class="product-img">
+                <img src="../../css/img/rosquitas.jpg" alt="Rosquillas" class="product-img">
                 <h2 class="product-name">Rosquillas 6u</h2>
                 <p class="product-desc">Dulces tradicionales.</p>
                 <div class="product-meta">
@@ -158,7 +140,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-09">
-                <img src="../../img/placeholder.png" alt="Bollo de Leche" class="product-img">
+                <img src="../../css/img/panleche.jpg" alt="Bollo de Leche" class="product-img">
                 <h2 class="product-name">Bollo de Leche</h2>
                 <p class="product-desc">Bollo esponjoso con toque de leche.</p>
                 <div class="product-meta">
@@ -168,7 +150,7 @@
             </article>
 
             <article class="product-card" data-product-id="pan-10">
-                <img src="../../img/placeholder.png" alt="Panecillos 4u" class="product-img">
+                <img src="../../css/img/bollos-recien-horneados-en-la-cesta.jpg" alt="Panecillos 4u" class="product-img">
                 <h2 class="product-name">Panecillos 4u</h2>
                 <p class="product-desc">Perfectos para bocadillos pequeños.</p>
                 <div class="product-meta">
@@ -181,39 +163,27 @@
 
     </div>
 
-    <footer class="bg-light py-4 border-top">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-12">
-                    <div class="d-flex gap-3 align-items-center flex-wrap">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-                            <i class="fab fa-x-twitter fa-2x"></i>
-                        </a>
-                        <div style="margin-left: 30px;">
-                            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start">
-                        <a href="#" class="text-decoration-none text-dark small">Política de privacidad</a>
-                        <a href="#" class="text-decoration-none text-dark small">Política de cookies</a>
-                        <a href="#" class="text-decoration-none text-dark small">Aviso legal</a>
-                        <a href="#" class="text-decoration-none text-dark small">Condiciones de compra</a>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <button class="btn btn-outline-primary" id="atencioncliente">Atención al cliente</button>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Aviso legal</a>
+            <a href="#">Condiciones de compra</a>
         </div>
     </footer>
 

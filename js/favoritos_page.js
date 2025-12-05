@@ -1,11 +1,16 @@
 (function () {
+  'use strict';
+  
   const LS_KEY = 'favorites';
 
   function loadFavorites() {
     try {
       const raw = localStorage.getItem(LS_KEY);
-      return raw ? JSON.parse(raw) : {};
+      const data = raw ? JSON.parse(raw) : {};
+      console.log('[FavoritosPage] Loaded:', data);
+      return data;
     } catch (e) {
+      console.error('[FavoritosPage] Error loading:', e);
       return {};
     }
   }
@@ -15,28 +20,36 @@
     delete favs[id];
     try {
       localStorage.setItem(LS_KEY, JSON.stringify(favs));
+      console.log('[FavoritosPage] Removed favorite:', id);
     } catch (e) {
-      console.error('Error al guardar favoritos:', e);
+      console.error('[FavoritosPage] Error saving:', e);
     }
     return favs;
   }
 
   function renderFavorites() {
+    console.log('[FavoritosPage] Rendering...');
     const favorites = loadFavorites();
     const container = document.getElementById('favoritos-list');
-    const sinFavoritos = document.getElementById('sin-favoritos');
+    const noFavsMsg = document.getElementById('sin-favoritos');
 
-    if (!container) return;
+    if (!container) {
+      console.warn('[FavoritosPage] Container not found');
+      return;
+    }
 
     container.innerHTML = '';
 
     const entries = Object.entries(favorites);
+    console.log('[FavoritosPage] Found ' + entries.length + ' favorites');
+    
     if (entries.length === 0) {
-      if (sinFavoritos) sinFavoritos.style.display = 'block';
+      if (noFavsMsg) noFavsMsg.style.display = 'block';
+      container.innerHTML = '<p style="text-align: center; padding: 40px;">No hay favoritos aún</p>';
       return;
     }
 
-    if (sinFavoritos) sinFavoritos.style.display = 'none';
+    if (noFavsMsg) noFavsMsg.style.display = 'none';
 
     entries.forEach(([id, name]) => {
       const card = document.createElement('article');
@@ -44,17 +57,22 @@
       card.dataset.productId = id;
 
       card.innerHTML = `
-        <img src="../img/placeholder.png" alt="${name}" class="product-img">
+        <img src="../css/img/placeholder.png" alt="${name}" class="product-img">
         <h2 class="product-name">${name}</h2>
         <div class="product-meta">
-          <button class="fav-btn favorited" type="button" aria-label="Eliminar de favoritos" data-product-id="${id}">❤️</button>
+          <button class="fav-btn favorited" type="button" aria-label="Eliminar de favoritos" data-remove-id="${id}">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
       `;
 
-      const favBtn = card.querySelector('.fav-btn');
-      favBtn.addEventListener('click', function (e) {
+      const removeBtn = card.querySelector('[data-remove-id]');
+      removeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
         e.stopPropagation();
-        removeFavorite(id);
+        const idToRemove = this.getAttribute('data-remove-id');
+        console.log('[FavoritosPage] Removing:', idToRemove);
+        removeFavorite(idToRemove);
         renderFavorites();
       });
 
@@ -62,18 +80,29 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    try {
+  function init() {
+    console.log('[FavoritosPage] Initializing...');
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        renderFavorites();
+      });
+    } else {
       renderFavorites();
-    } catch (e) {
-      console.error('Error inicializando página de favoritos:', e);
     }
-  });
 
-  // Exponer función para refrescar desde otros scripts
+    // escuchar eventos de actualización de favoritos
+    window.addEventListener('favoritesUpdated', function () {
+      console.log('[FavoritosPage] Favorites updated, re-rendering...');
+      renderFavorites();
+    });
+  }
+
   window._favoritos_page = {
-    renderFavorites,
-    loadFavorites
+    render: renderFavorites,
+    load: loadFavorites,
+    remove: removeFavorite
   };
+
+  init();
 
 })();
