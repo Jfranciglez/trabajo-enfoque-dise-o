@@ -11,18 +11,38 @@
 
 <body>
     <div id="content">
-        <header class="d-flex align-items-center justify-content-between p-3 bg-danger text-white">
-            <h1 class="h4 mb-0">FreshSuperMarket</h1>
-            <nav class="navbar">
-                <ul class="d-flex list-unstyled align-items-center gap-3 mb-0">
-                    <li><a href="../index.html" class="text-white text-decoration-none" title="Inicio"><i class="fas fa-home"></i></a></li>
-                    <li><a href="../iniciosesion/index.html" class="text-white text-decoration-none" title="Inicia Sesión"><i class="fas fa-user"></i></a></li>
-                    <li><a href="../favoritos/index.html" class="text-white text-decoration-none" title="Favoritos"><i class="fas fa-heart"></i></a></li>
-                    <li><a href="../carrito/index.html" class="text-white text-decoration-none" title="Carrito"><i class="fas fa-shopping-cart"></i></a>
-                        <span id="cart-count" class="bg-white text-danger rounded-circle px-2 ms-1">0</span>
-                    </li>
+        <header>
+            <img src="../../css/img/logo.png">
+            
+             <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html" title="Página Principal"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../iniciosesion/index.html" title="Inicia Sesión"><i class="fas fa-user"></i></a></li>
+                    <li><a href="../favoritos/index.html" title="Favoritos"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="../carrito/index.html" title="Carrito"><i class="fas fa-shopping-cart"></i></a> <span id="cart-count">0</span></li>
+                </ul>
+            </nav>  
+            <nav class="navprod">
+                <button class="menuhamb" id="menuhamb">
+                    ☰
+                </button>
+                <p id="textProd">Productos</p>
+
+                <ul id="menu">
+                    <li><a href="../productos/frutaverd/index.html">Frutas y Verduras</a></li>
+                    <li><a href="../productos/pescaderia/index.html">Pescadería</a></li>
+                    <li><a href="../productos/carniceria/index.html">Carnicería</a></li>
+                    <li><a href="../productos/congelados/index.html">Congelados</a></li>
+                    <li><a href="../productos/bebidas/index.html">Bebidas</a></li>
+                    <li><a href="../productos/hogarlimp/index.html">Hogar y Limpieza</a></li>
+                    <li><a href="../productos/panaderia/index.html">Panadería</a></li>
+                    <li><a href="../productos/belleza/index.html">Belleza</a></li>
                 </ul>
             </nav>
+            <div id="barrabuscar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div> 
         </header>
 
         <main class="container my-4">
